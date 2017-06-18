@@ -1,0 +1,16 @@
+PODS:
+  - DTAlertViewContainer (0.1.4)
+
+DEPENDENCIES:
+  - DTAlertViewContainer (from `~/Documents/Libraries/DTAlertViewContainer`)
+
+EXTERNAL SOURCES:
+  DTAlertViewContainer:
+    :path: ~/Documents/Libraries/DTAlertViewContainer
+
+SPEC CHECKSUMS:
+  DTAlertViewContainer: 03d48ef72cbf54ec77a90c96750516b39a8d62bb
+
+PODFILE CHECKSUM: 370859dcead36a78797f369a84f20d71a4ec1631
+
+COCOAPODS: 1.1.1
