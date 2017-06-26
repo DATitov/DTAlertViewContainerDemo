@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		283921581F00DC3100C6D73D /* NotificationBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283921571F00DC3100C6D73D /* NotificationBackgroundView.swift */; };
+		2839215A1F00F55300C6D73D /* ActionSheetAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283921591F00F55300C6D73D /* ActionSheetAlertView.swift */; };
+		2839215E1F00F5FB00C6D73D /* ActionSheetActionsBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2839215D1F00F5FB00C6D73D /* ActionSheetActionsBackgroundView.swift */; };
+		283921601F00FB0000C6D73D /* ActionSheetActionsField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2839215F1F00FB0000C6D73D /* ActionSheetActionsField.swift */; };
 		28449D401EE9A8880051A6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28449D3F1EE9A8880051A6BD /* AppDelegate.swift */; };
 		28449D451EE9A8880051A6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28449D431EE9A8880051A6BD /* Main.storyboard */; };
 		28449D471EE9A8880051A6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28449D461EE9A8880051A6BD /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 /* Begin PBXFileReference section */
 		0190872556F677D4AFA99F0A /* Pods-DTAlertViewContainerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTAlertViewContainerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DTAlertViewContainerDemoTests/Pods-DTAlertViewContainerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		283921571F00DC3100C6D73D /* NotificationBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationBackgroundView.swift; sourceTree = "<group>"; };
+		283921591F00F55300C6D73D /* ActionSheetAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetAlertView.swift; sourceTree = "<group>"; };
+		2839215D1F00F5FB00C6D73D /* ActionSheetActionsBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetActionsBackgroundView.swift; sourceTree = "<group>"; };
+		2839215F1F00FB0000C6D73D /* ActionSheetActionsField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetActionsField.swift; sourceTree = "<group>"; };
 		28449D3C1EE9A8880051A6BD /* DTAlertViewContainerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTAlertViewContainerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28449D3F1EE9A8880051A6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28449D441EE9A8880051A6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +106,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2839215B1F00F5C700C6D73D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				28651B0D1EF67C8D00F57A8B /* NotificationAlertView.swift */,
+				283921571F00DC3100C6D73D /* NotificationBackgroundView.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		2839215C1F00F5DA00C6D73D /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				283921591F00F55300C6D73D /* ActionSheetAlertView.swift */,
+				2839215D1F00F5FB00C6D73D /* ActionSheetActionsBackgroundView.swift */,
+				2839215F1F00FB0000C6D73D /* ActionSheetActionsField.swift */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
 		28449D331EE9A8880051A6BD = {
 			isa = PBXGroup;
 			children = (
@@ -167,10 +192,10 @@
 		28651B0C1EF67C6D00F57A8B /* AlertViews */ = {
 			isa = PBXGroup;
 			children = (
+				2839215C1F00F5DA00C6D73D /* ActionSheet */,
+				2839215B1F00F5C700C6D73D /* Notification */,
 				28651B101EF6D45E00F57A8B /* SeveralTextFieldsAlertView.swift */,
 				28449D6D1EE9BDFD0051A6BD /* PositionBindingAlertView.swift */,
-				28651B0D1EF67C8D00F57A8B /* NotificationAlertView.swift */,
-				283921571F00DC3100C6D73D /* NotificationBackgroundView.swift */,
 			);
 			name = AlertViews;
 			sourceTree = "<group>";
@@ -483,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283921601F00FB0000C6D73D /* ActionSheetActionsField.swift in Sources */,
 				28BAAE711EEDB15E00D4A887 /* ConstructorTVC.swift in Sources */,
 				28651B0E1EF67C8D00F57A8B /* NotificationAlertView.swift in Sources */,
 				28651B111EF6D45E00F57A8B /* SeveralTextFieldsAlertView.swift in Sources */,
@@ -490,6 +516,8 @@
 				28651B0A1EF6787B00F57A8B /* MainTVC.swift in Sources */,
 				283921581F00DC3100C6D73D /* NotificationBackgroundView.swift in Sources */,
 				28449D6E1EE9BDFD0051A6BD /* PositionBindingAlertView.swift in Sources */,
+				2839215E1F00F5FB00C6D73D /* ActionSheetActionsBackgroundView.swift in Sources */,
+				2839215A1F00F55300C6D73D /* ActionSheetAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

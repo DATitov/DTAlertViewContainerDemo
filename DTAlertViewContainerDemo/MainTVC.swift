@@ -31,8 +31,11 @@ class MainTVC: UITableViewController {
                 appearenceAnimation = .fromTop
                 break
             case 1: //  Action Sheet
-                av = NotificationAlertView()
+                av = ActionSheetAlertView()
+                vc.positionBinding = .bottom
                 appearenceAnimation = .fromBottom
+                let blurEffect = UIBlurEffect(style: .dark)
+                vc.backgroundView = UIVisualEffectView(effect: blurEffect)
                 break
             default:
                 break
