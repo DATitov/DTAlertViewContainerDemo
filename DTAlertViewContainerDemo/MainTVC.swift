@@ -22,19 +22,23 @@ class MainTVC: UITableViewController {
         switch indexPath.section {
         case 2:
             let vc = DTAlertViewContainerController()
+            var appearenceAnimation: DTAlertViewContainerAppearenceType!
             var av: DTAlertViewProtocol?
             switch indexPath.row {
             case 0: //  Notification
                 av = NotificationAlertView()
+                vc.positionBinding = .top
+                appearenceAnimation = .fromTop
                 break
             case 1: //  Action Sheet
                 av = NotificationAlertView()
+                appearenceAnimation = .fromBottom
                 break
             default:
                 break
             }
             guard let alertView = av else { break }
-            vc.presentOverVC(self, alert: alertView as! UIView, appearenceAnimation: .fade, completion: nil)
+            vc.presentOverVC(self, alert: alertView as! UIView, appearenceAnimation: appearenceAnimation, completion: nil)
             break
         case 3: //  Position Binding
             let vc = DTAlertViewContainerController()
