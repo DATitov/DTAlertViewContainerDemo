@@ -51,6 +51,8 @@ class MainTVC: UITableViewController {
                 av = PositionBindingAlertView()
                 (av as! PositionBindingAlertView).demoDelegate = self
                 alertContainer = vc
+                let blurEffect = UIBlurEffect(style: .dark)
+                vc.backgroundView = UIVisualEffectView(effect: blurEffect)
                 break
             case 1:
                 av = SeveralTextFieldsAlertView()
